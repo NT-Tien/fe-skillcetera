@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            color: red;
+            background-color: blue;
+            display: block;
+            height: 100px;
+        }
+
+        p {
+            color: red;
+            background-color: blue;
+            display: inline-block;
+            height: 100px; 
+        }
+
+        h1{
+            background-color: yellow;
+        }
+        /* id */
+        #hello{
+            color: red;
+        }
+        /* class */
+        .hello{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display : block --> 
+    <!-- block là thuộc sẽ chiếm hết độ rộng của một dòng -->
+    <!-- bất cứ giá trị khi set giá trị cho display có block thì hỗ set height -->
+    <div>
+        hello world
+    </div>
+    <br />
+    <div>
+        div 2
+    </div>
+
+     <!-- có hai thứ dùng phân biệt / chỉnh sửacụ thể  một thẻ tag nào đó -->
+     <!-- chúng ta có: id và class -->
+        <!-- id là duy nhất chỉ có một thẻ duy nhất có id đó -->
+        <!-- class là có thể có nhiều thẻ có class đó -->
+
+    <h1 id="hello">hello</h1>
+    <h2 class="hello">hello</h2>
+    <h3 class="hello">hello</h3>
+    <h4>hello</h4>
+    <h5>hello</h5>
+    <h6>hello</h6>
+
+
+
+    <!-- inline-block -->
+    <!-- sự khác biệt duy nhất giữa inline-block và inline là thằng inline-block cho set height -->
+    <p>p tag</p>
+    
+    <!-- inline -->
+    <span>span tag</span>
+</body>
+<script>
+    var H1Hello = document.getElementById('hello');
+
+    H1Hello.style.color = 'blue';
+</script>
+
+</html>
+
+
+<!-- DOM trong html css js -->
