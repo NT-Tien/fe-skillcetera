@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:hover {
+  background-color: yellow;
+}
+#hovering{
+	display: none;
+	height: 100px;
+    background-color: aqua;
+    width: 100px;
+}
+#wrap{
+	width: fit-content;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the :hover selector</h1>
+
+<p>The :hover selector style links on mouse-over:</p>
+
+<div 
+	id="wrap"
+    onmouseover="handleHover()"
+    onmouseout="handleMoveOut()"
+>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+	<div id="hovering">
+		hovering...
+	</div>
+</div>
+<script>
+	function handleHover() {
+    	var hovering = document.getElementById("hovering");
+        hovering.style.display = "block";
+	}
+    function handleMoveOut(){
+    	var hovering = document.getElementById("hovering");
+        hovering.style.display = "none";
+    }
+</script>
+</body>
+</html>
